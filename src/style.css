@@ -41,17 +41,18 @@ body {
 
 /* Header Styles */
 .header {
-  padding: 1rem 5%;
+  padding: 0.8rem 5%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
-  background: var(--bg-glass);
-  border-bottom: 1px solid var(--border-glass);
+  backdrop-filter: blur(25px) saturate(180%);
+  -webkit-backdrop-filter: blur(25px) saturate(180%);
+  background: rgba(255, 255, 255, 0.85); /* More solid for contrast */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
   z-index: 1000;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
 }
 
 .logo-container {
@@ -60,9 +61,9 @@ body {
 }
 
 .logo {
-  height: 65px; /* Increased size */
+  height: 75px; /* Increased size significantly */
   width: auto;
-  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)); /* Added definition */
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)) contrast(1.1); /* Added definition */
   transition: var(--transition-smooth);
 }
 
