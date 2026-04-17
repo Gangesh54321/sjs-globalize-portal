@@ -1,5 +1,6 @@
 {
   "rewrites": [
-    { "source": "/lqa", "destination": "https://sjsloblizelqa.vercel.app/" }
+    { "source": "/lqa", "destination": "https://sjsloblizelqa.vercel.app/" },
+    { "source": "/assets/(.*)", "destination": "https://sjsloblizelqa.vercel.app/assets/$1" }
   ]
 }
