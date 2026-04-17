@@ -1,5 +1,3 @@
 {
-  "redirects": [
-    { "source": "/lqa", "destination": "https://sjsloblizelqa.vercel.app/", "permanent": false }
-  ]
+  "cleanUrls": true
 }
