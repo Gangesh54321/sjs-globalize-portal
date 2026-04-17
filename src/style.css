@@ -60,9 +60,14 @@ body {
 }
 
 .logo {
-  height: 50px;
+  height: 65px; /* Increased size */
   width: auto;
-  filter: drop-shadow(0 0 10px rgba(255, 84, 39, 0.2));
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1)); /* Added definition */
+  transition: var(--transition-smooth);
+}
+
+.logo:hover {
+  transform: scale(1.05);
 }
 
 /* Main Content Styles */
