@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/lqa", "destination": "https://sjsloblizelqa.vercel.app/" }
+  ]
+}
