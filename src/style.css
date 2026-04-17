@@ -3,10 +3,11 @@
   --primary-glow: rgba(255, 84, 39, 0.4);
   --secondary: #76B729;
   --accent: #003164;
-  --bg-main: #0a0c10;
-  --bg-card: rgba(30, 41, 59, 0.7);
-  --bg-glass: rgba(15, 23, 42, 0.8);
-  --border-glass: rgba(255, 255, 255, 0.1);
+  --bg-main: #020617; /* Deep Navy Black */
+  --bg-navy: #0f172a; /* Premium Navy */
+  --bg-card: rgba(30, 41, 59, 0.6);
+  --bg-glass: rgba(2, 6, 23, 0.85);
+  --border-glass: rgba(255, 255, 255, 0.08);
   --text-primary: #f8fafc;
   --text-secondary: #94a3b8;
   --font-main: 'Montserrat', sans-serif;
@@ -27,8 +28,9 @@ body {
   min-height: 100vh;
   overflow-x: hidden;
   background-image: 
-    radial-gradient(circle at 10% 20%, rgba(255, 84, 39, 0.08) 0%, transparent 40%),
-    radial-gradient(circle at 90% 80%, rgba(118, 183, 41, 0.08) 0%, transparent 40%);
+    radial-gradient(circle at 10% 20%, rgba(15, 23, 42, 0.5) 0%, transparent 40%),
+    radial-gradient(circle at 90% 80%, rgba(255, 84, 39, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 50% 50%, #020617 0%, transparent 100%);
 }
 
 #app {
