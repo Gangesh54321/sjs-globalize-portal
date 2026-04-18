@@ -2,23 +2,7 @@
   "rewrites": [
     {
       "source": "/lqa",
-      "destination": "https://sjsloblizelqa.vercel.app/"
-    },
-    {
-      "source": "/lqa/:path*",
-      "destination": "https://sjsloblizelqa.vercel.app/:path*"
-    },
-    {
-      "source": "/assets/:path*",
-      "destination": "https://sjsloblizelqa.vercel.app/assets/:path*"
-    },
-    {
-      "source": "/static/:path*",
-      "destination": "https://sjsloblizelqa.vercel.app/static/:path*"
-    },
-    {
-      "source": "/vite.svg",
-      "destination": "https://sjsloblizelqa.vercel.app/vite.svg"
+      "destination": "/index.html"
     }
   ]
 }

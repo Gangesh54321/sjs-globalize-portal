@@ -37,7 +37,28 @@ const tools: Tool[] = [
 
 const renderApp = () => {
   const app = document.querySelector<HTMLDivElement>('#app')!
-  
+  const path = window.location.pathname;
+
+  if (path === '/lqa') {
+    app.innerHTML = `
+      <header class="header">
+        <div class="logo-container">
+          <a href="/"><img src="/logo.png" alt="SJS Globalize" class="logo"></a>
+        </div>
+      </header>
+      <div class="iframe-view">
+        <div class="message-bar">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg>
+          Welcome! If the page body is blank, please Login from the LQA Grid Creator Tab first.
+        </div>
+        <div class="iframe-container">
+          <iframe src="https://sjsloblizelqa.vercel.app/" title="Unified LQA"></iframe>
+        </div>
+      </div>
+    `;
+    return;
+  }
+
   app.innerHTML = `
     <header class="header">
       <div class="logo-container">
@@ -57,7 +78,7 @@ const renderApp = () => {
 
       <div id="cards" class="tool-grid">
         ${tools.map((tool, index) => `
-          <${tool.url ? `a href="${tool.url}" target="_blank"` : 'div'} 
+          <${tool.url ? `a href="${tool.url}"` : 'div'} 
             class="tool-card ${tool.status === 'soon' ? 'coming-soon' : ''} fade-in" 
             style="animation-delay: ${0.4 + index * 0.1}s">
             <div class="badge ${tool.status === 'active' ? 'badge-active' : 'badge-soon'}">

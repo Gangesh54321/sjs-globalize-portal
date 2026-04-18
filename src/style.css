@@ -297,6 +297,45 @@ body {
   opacity: 0.8;
 }
 
+/* Iframe View Styles */
+.iframe-view {
+  display: flex;
+  flex-direction: column;
+  height: calc(100vh - 80px); /* Adjust for header height */
+  overflow: hidden;
+}
+
+.message-bar {
+  background: var(--primary);
+  color: white;
+  padding: 0.75rem 5%;
+  font-size: 0.95rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  box-shadow: 0 4px 12px rgba(255, 84, 39, 0.2);
+  z-index: 10;
+}
+
+.message-bar svg {
+  flex-shrink: 0;
+}
+
+.iframe-container {
+  flex-grow: 1;
+  position: relative;
+  background: #f8fafc;
+}
+
+.iframe-container iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  background: transparent;
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
