@@ -11,10 +11,6 @@
     {
       "source": "/assets/:path*",
       "destination": "https://sjsloblizelqa.vercel.app/assets/:path*"
-    },
-    {
-      "source": "/static/:path*",
-      "destination": "https://sjsloblizelqa.vercel.app/static/:path*"
     }
   ]
 }
