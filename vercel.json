@@ -1,8 +1,23 @@
 {
-  "redirects": [
+  "rewrites": [
     {
       "source": "/lqa",
       "destination": "https://sjsloblizelqa.vercel.app/"
+    },
+    {
+      "source": "/lqa/:path*",
+      "destination": "https://sjsloblizelqa.vercel.app/:path*"
+    },
+    {
+      "source": "/assets/:path*",
+      "has": [
+        {
+          "type": "header",
+          "key": "referer",
+          "value": ".*/lqa.*"
+        }
+      ],
+      "destination": "https://sjsloblizelqa.vercel.app/assets/:path*"
     }
   ]
 }
