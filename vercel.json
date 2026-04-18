@@ -10,14 +10,11 @@
     },
     {
       "source": "/assets/:path*",
-      "has": [
-        {
-          "type": "header",
-          "key": "referer",
-          "value": ".*/lqa.*"
-        }
-      ],
       "destination": "https://sjsloblizelqa.vercel.app/assets/:path*"
+    },
+    {
+      "source": "/static/:path*",
+      "destination": "https://sjsloblizelqa.vercel.app/static/:path*"
     }
   ]
 }
